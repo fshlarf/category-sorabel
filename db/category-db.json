@@ -1,0 +1,12 @@
+{
+  "products": [
+    {
+      "title": "Kemeja Pria Kotak-kotak",
+      "id": 1
+    },
+    {
+      "title": "Kaos Pria",
+      "id": 2
+    }
+  ]
+}
