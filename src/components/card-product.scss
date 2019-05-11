@@ -1,16 +1,29 @@
 .card-product {
+  margin-bottom: 20px;
   &__img {
-    width: 100%;
-    object-fit: cover;
-    z-index: 1;
-  }
-  &__label {
-    position: absolute;
-    top: 58%;
-    left: 25.23%;
-    background-color: orange;
-    padding: 0px 10px 0px 10px;
-    color: white;
+    overflow: hidden;
+    position: relative;
+    img {
+      width: 100%;
+      object-fit: cover;
+      z-index: 1;
+    }
+    &-label {
+      width: 100%;
+      z-index: 2;
+      pointer-events: none;
+      display: block;
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      padding-bottom: 32px;
+      div {
+        background-color: rgb(190, 138, 35);
+        padding: 3px 8px;
+        display: table;
+        color: white;
+      }
+    }
   }
   &__header {
     margin-top: 12px;
@@ -27,7 +40,7 @@
     }
     span {
       display: flexbox;
-      margin-top: -30px;
+      margin-top: -20px;
       // width: 10%;
       float: right;
       button {

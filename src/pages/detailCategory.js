@@ -1,9 +1,10 @@
 import React from 'react'
+import ProductDetail from './../components/ProductDetail'
 
 function detailCategory() {
   return (
     <div className="root">
-      detail category
+      <ProductDetail/>
     </div>
   )
 }

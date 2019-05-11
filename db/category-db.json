@@ -24,6 +24,40 @@
       ],
       "sizeChart": "Warna Hitam dan Navy, Ukuran tersedia S",
       "popularProduct": true
+    },
+    {
+      "category": "dress",
+      "title": "Loinaya Stripe A Line Mini Dress",
+      "id": 2,
+      "urlImage": [
+        "https://imager-next.freetls.fastly.net/images/resized/480/f64e4187-0e07-4c67-b6bb-5df6d828be7c",
+        "https://imager-next.freetls.fastly.net/images/resized/480/11dd9572-f114-4da1-bde3-95fd02179c42",
+        "https://imager-next.freetls.fastly.net/images/resized/480/68ba5e4a-d300-409a-9e34-fa48c1cd08da",
+        "https://imager-next.freetls.fastly.net/images/resized/480/fd861c41-c8c3-420e-8ae0-453af79eb181"
+      ],
+      "price": 119000,
+      "fiturCanUse": true,
+      "material": "Twistcone kombinasi katun",
+      "color": [
+        "Navy, Black, Maroon"
+      ],
+      "size": [
+        "L", "XL"
+      ],
+      "likes": 0,
+      "detail": [
+        "Baloteli kombinasi Katun Stretch",
+        "Kancing Belakang, Tali variasi tangan"
+      ],
+      "sizeChart": "Warna Hitam dan Navy, Ukuran tersedia S",
+      "popularProduct": true,
+      "comments": [
+        {
+          "name": "Julita",
+          "date": "11 Mei 2019",
+          "comment": "Barang bagus"
+        }
+      ]
     }
   ]
 }

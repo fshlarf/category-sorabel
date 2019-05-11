@@ -9,7 +9,7 @@ function RouteComponent() {
   return (
     <Router>
       <Route exact path="/" component={Category} />
-      <Route path="/detail" component={Detail} />
+      <Route path="/product/detail" component={Detail} />
       <Route path="/add" component={AddProduct} />
     </Router>
   )

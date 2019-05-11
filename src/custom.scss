@@ -9,9 +9,34 @@ body {
 }
 .root {
   background-color: white !important;
-  height: -webkit-fill-available;
-  
+  padding-bottom: 20px;
 }
 .ic-like {
-  transform: scale(0.6);
+  transform: scale(0.5);
+}
+.btn-primary {
+  border-color: rgb(172, 20, 90);
+  border-style: solid;
+  border-radius: 8px;
+  background-color: rgb(172, 20, 90);
+  outline: none !important;
+  &:hover {
+    border-color: rgb(172, 20, 90);
+    background-color: rgb(172, 20, 90);
+  }
+  &:active {
+    border-color: rgb(172, 20, 90) !important;
+    background-color: rgb(172, 20, 90) !important;
+    box-shadow: none !important;
+  }
+  &:focus {
+    border-color: rgb(172, 20, 90) !important;
+    background-color: rgb(172, 20, 90) !important;
+    outline: none !important;
+    box-shadow: none;
+  }
+  &:visited {
+    border-color: rgb(172, 20, 90);
+    background-color: rgb(172, 20, 90);
+  }
 }
