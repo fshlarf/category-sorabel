@@ -2,7 +2,7 @@ import React from 'react'
 
 function detailCategory() {
   return (
-    <div className="category-detail">
+    <div className="root">
       detail category
     </div>
   )

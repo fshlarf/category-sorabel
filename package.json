@@ -16,8 +16,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "json-server": "json-server --watch ./db/category-db.json --port 1000",
-    "dev": "npm start npm run json-server"
+    "json-server": "json-server --watch ./db/category-db.json --port 1000"
   },
   "eslintConfig": {
     "extends": "react-app"

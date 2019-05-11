@@ -1,2 +1,17 @@
-$body-bg: white;
+$body-bg: #eee;
 @import '~bootstrap/scss/bootstrap.scss';
+
+body {
+  height: 100%;
+  background-color: #e8e8e8;
+  max-width: 38rem;
+  margin: 0 auto;
+}
+.root {
+  background-color: white !important;
+  height: -webkit-fill-available;
+  
+}
+.ic-like {
+  transform: scale(0.6);
+}

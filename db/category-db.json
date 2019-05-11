@@ -1,12 +1,29 @@
 {
   "products": [
     {
-      "title": "Kemeja Pria Kotak-kotak",
-      "id": 1
-    },
-    {
-      "title": "Kaos Pria",
-      "id": 2
+      "category": "dress",
+      "title": "Dulitya Stripes Bodycon Mini Dress",
+      "id": 1,
+      "urlImage": [
+        "https://imager-next.freetls.fastly.net/images/resized/480/15f5793a-bb0d-41f0-b57e-624309695fa0",
+        "https://imager-next.freetls.fastly.net/images/resized/480/9397a1f9-6212-4df0-8e9e-831d84ff4397"
+      ],
+      "price": 159000,
+      "fiturCanUse": true,
+      "material": "cotton",
+      "color": [
+        "Navy, Black"
+      ],
+      "size": [
+        "L", "S", "XL"
+      ],
+      "likes": 0,
+      "detail": [
+        "Bahan Katun Stretch",
+        "Resleting Belakang"
+      ],
+      "sizeChart": "Warna Hitam dan Navy, Ukuran tersedia S",
+      "popularProduct": true
     }
   ]
 }
