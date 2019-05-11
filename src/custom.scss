@@ -1,11 +1,25 @@
 $body-bg: #eee;
 @import '~bootstrap/scss/bootstrap.scss';
 
+/* Custom Font */
+@font-face {
+  font-family: 'GothamSSm-Book';
+  font-display: 'swap';
+  src: url('./assets/font/GothamSSm-Book.otf');
+}
+
+@font-face {
+  font-family: 'GothamSSm-Bold';
+  font-display: 'swap';
+  src: url('./assets/font/GothamSSm-Bold.otf');
+}
+
 body {
   height: 100%;
   background-color: #e8e8e8;
   max-width: 38rem;
   margin: 0 auto;
+  font-family: GothamSSm-Book;
 }
 .root {
   background-color: white !important;
@@ -38,5 +52,34 @@ body {
   &:visited {
     border-color: rgb(172, 20, 90);
     background-color: rgb(172, 20, 90);
+  }
+}
+
+.btn-secondary {
+  color: black;
+  border-color: rgb(196, 196, 196);
+  border-style: solid;
+  border-radius: 8px;
+  background-color: white;
+  outline: none !important;
+  &:hover {
+    background-color: white;
+    color: black;
+
+  }
+  &:active {
+    background-color: white !important;
+    box-shadow: none !important;
+    color: black !important;
+  }
+  &:focus {
+    background-color: white !important;
+    outline: none !important;
+    box-shadow: none;
+    color: black !important;
+  }
+  &:visited {
+    background-color: white;
+    color: black !important;
   }
 }

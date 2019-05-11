@@ -10,6 +10,8 @@ export default class productDetail extends Component {
       product: [],
       altImg: 'Image Not Found',
       arrayImg: [],
+      arrayColor: [],
+      arraySize: [],
       mainImg: ''
     }
   }
@@ -17,16 +19,19 @@ export default class productDetail extends Component {
     this.getDataProduct()
   }
   getDataProduct = () => {
-    axios.get('http://localhost:1000/products/1', {
+    axios.get('http://localhost:1000/products/2', {
       crossDomain: true
     })
     .then(res => {
       this.setState({
         product: res.data,
         mainImg: res.data.urlImage[0],
-        arrayImg: res.data.urlImage
+        arrayImg: res.data.urlImage,
+        arrayColor: res.data.color,
+        arraySize: res.data.size
+
       })
-      console.log(this.state.arrayImg);
+      console.log(this.state.arraySize);
       
     })
     .catch(err => {
@@ -65,6 +70,45 @@ export default class productDetail extends Component {
           </div>
           <div className="detail__title">
             <div className="detail__title-name">{this.state.product.title}</div>
+            <div className="detail__title-price">
+              {this.state.product.price} 
+              {
+                this.state.product.canUseFirst ? 
+                <span>Bisa Coba Dulu</span> : <span></span>
+              }
+            </div>
+          </div>
+          <div className="detail__material">
+            <div>BAHAN UTAMA<p>{this.state.product.material}</p></div>
+          </div>
+          <div className="detail__colorSize">
+            <div className="detail__colorSize-label">Pilih warna yang tersedia</div>
+            <div className="detail__colorSize-btn">
+              {this.state.arrayColor.map((color, i) => {
+                return (
+                  <button>{color}</button>
+                )
+              })}
+            </div>
+            <div className="detail__colorSize-label">Pilih ukuran yang tersedia</div>
+            <div className="detail__colorSize-btn">
+              {this.state.arraySize.map((size, i) => {
+                return (
+                  <button>{size}</button>
+                )
+              })}
+            </div>
+          </div>
+          <div className="detail__btn">
+            <div className="detail__btn-labelLikes">{this.state.product.likes} kali disimpan</div>
+            <div className="detail__btn-container">
+              <button className="detail__btn-container--save btn btn-secondary btn-lg">SIMPAN</button>
+              <button className="detail__btn-container--buy btn btn-primary btn-lg">BELI SEKARANG</button>
+            </div>
+          </div>
+          <div className="detail__more">
+            Detail
+            <div>{this.state.product.detail}</div>
           </div>
         </div>
       </div>

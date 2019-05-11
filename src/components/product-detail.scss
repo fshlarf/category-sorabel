@@ -17,5 +17,87 @@
 .detail {
   &__title {
     padding: 16px;
+    &-name {
+      color: rgb(82, 82, 82);
+      font-size: 18px;
+      font-weight: 600;
+    }
+    &-price {
+      color: rgb(172, 20, 90);
+      font-size: 20px;
+      font-weight: 600;
+      span {
+        color: rgb(48, 172, 48);
+        float: right;
+      }
+    }
+  }
+  &__material {
+    padding: 16px 16px 8px 16px;
+    color: #808080;
+    border-bottom: 1px solid #E8E8E8;
+    font-size: 18px;
+    p {
+      font-size: 20px;
+      color: #525252;
+    }
+  }
+  &__colorSize {
+    padding: 0px 16px 25px 16px;
+    color: #808080;
+    border-bottom: 1px solid #E8E8E8;
+    &-label {
+      margin-top: 16px;
+      font-size: 20px;
+      color: #525252;
+      font-weight: 500;
+    }
+    &-btn {
+      margin-top: 10px;
+      button {
+        padding: 12px 20px 12px 20px;
+        border-color: #C4C4C4;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 8px;
+        background-color: #FFFFFF;
+        margin-right: 10px;
+        color: rgb(82, 82, 82);
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 18px;
+      }
+    }
+  }
+  &__btn {
+    padding: 16px 16px 8px 16px;
+    color: #808080;
+    border-bottom: 1px solid #E8E8E8;
+    &-labelLikes {
+      font-weight: 500;
+      font-size: 18px;
+      padding-bottom: 14px;
+    }
+    &-container {
+      margin-bottom: 16px;
+      &--save {
+        font-size: 15px; 
+        width: 28%;
+        margin-right: 10px;
+      }
+      &--buy {
+        font-size: 15px; 
+        width: 70%;
+      }
+    }
+  }
+  &__more {
+    padding: 16px 16px 8px 16px;
+    color: #808080;
+    border-bottom: 1px solid #E8E8E8;
+    font-size: 18px; 
+    div {
+      color: #4a4a4a;
+    }
   }
 }

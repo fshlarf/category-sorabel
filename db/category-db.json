@@ -9,10 +9,10 @@
         "https://imager-next.freetls.fastly.net/images/resized/480/9397a1f9-6212-4df0-8e9e-831d84ff4397"
       ],
       "price": 159000,
-      "fiturCanUse": true,
+      "canUseFirst": true,
       "material": "cotton",
       "color": [
-        "Navy, Black"
+        "NAVY", "BLACK"
       ],
       "size": [
         "L", "S", "XL"
@@ -39,12 +39,12 @@
       "fiturCanUse": true,
       "material": "Twistcone kombinasi katun",
       "color": [
-        "Navy, Black, Maroon"
+        "NAVY", "BLACK", "MAROON"
       ],
       "size": [
         "L", "XL"
       ],
-      "likes": 0,
+      "likes": 4000,
       "detail": [
         "Baloteli kombinasi Katun Stretch",
         "Kancing Belakang, Tali variasi tangan"
