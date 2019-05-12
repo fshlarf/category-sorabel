@@ -29,7 +29,6 @@
   &__header {
     margin-top: 12px;
     padding: 0px 30px 0px 16px;
-    // display: flex;
     &-title {
       font-size: 18px;
       width: 70%;
@@ -57,5 +56,40 @@
       font-weight: 700;
       white-space: normal;
     }
+    @media only screen and (max-width: 700px){
+      &-title {
+        font-size: 14px;
+        width: 70%;
+        cursor: pointer;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      &-label {
+        background-color: rgb(232, 232, 232);
+        padding: 3px 8px;
+        margin-top: 4px;
+        font-size: 12px;
+      }
+      &-price {
+        color: rgb(82, 82, 82);
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 700;
+        white-space: normal;
+      }
+      span {
+        display: flexbox;
+        margin-top: -30px;
+        // width: 10%;
+        float: right;
+        margin-right: -14px;
+        button {
+          font-size: 12px;
+          padding: 7px 15px
+        }
+      }
+    }
+    
   }
 }

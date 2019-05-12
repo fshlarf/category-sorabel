@@ -30,6 +30,11 @@ body {
 .ic-like {
   transform: scale(0.5);
 }
+@media only screen and (max-width: 700px){
+  .ic-like {
+    transform: scale(0.4);
+  }
+}
 .btn-primary {
   border-color: rgb(172, 20, 90);
   border-style: solid;
