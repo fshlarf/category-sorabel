@@ -3,6 +3,7 @@
   &__img {
     overflow: hidden;
     position: relative;
+    cursor: pointer;
     img {
       width: 100%;
       object-fit: cover;
@@ -32,6 +33,7 @@
     &-title {
       font-size: 18px;
       width: 70%;
+      cursor: pointer;
     }
     &-label {
       background-color: rgb(232, 232, 232);

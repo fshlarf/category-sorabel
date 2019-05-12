@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 // import API from './../config/Http'
 import cardProduct from './card-product.scss'
+import { Redirect } from "react-router-dom"
 
 export default class cardProducrCategory extends Component {
   constructor(props) {
@@ -22,11 +23,17 @@ export default class cardProducrCategory extends Component {
       this.setState({
         products: res.data
       })
-      console.log(this.state.products)
+      // console.log(this.state.products)
     })
     .catch(err => {
       console.log(err)
     })
+  }
+  openDetail(product) {
+    
+    let url = '/category/detail/' + product.id
+    console.log(url);
+    window.location = url
   }
   render() {
     return (
@@ -34,7 +41,7 @@ export default class cardProducrCategory extends Component {
        {this.state.products.map((product, i) => (
          <div className="card-product" key={i}>
           <div className="card-product__img" >
-            <img src={product.urlImage[0]} alt={this.state.altImg}/>
+            <img src={product.urlImage[0]} alt={this.state.altImg} onClick={() => this.openDetail(product)}/>
             {
               product.popularProduct ? 
               (<div className="card-product__img-label">
@@ -44,7 +51,7 @@ export default class cardProducrCategory extends Component {
             }
           </div>
           <div className="card-product__header">
-            <div className="card-product__header-title">{product.title}</div>
+            <div className="card-product__header-title" onClick={() => this.openDetail(product)}>{product.title}</div>
             <label className="card-product__header-label">L, XL, M</label>
             <span>
               <img className="ic-like" src={'https://salestock-public-prod.freetls.fastly.net/balok-assets/assets/img/icons/icon-heart-grey-0a895ac5bdf1f98aa48d5f85efc7679d.png'} alt={this.state.altImg}/>

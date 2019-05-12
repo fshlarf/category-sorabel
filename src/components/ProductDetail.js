@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import detailProd from './product-detail.scss'
+import ModalImage from './ModalImage'
 // import API from './../config/Http'
 
 export default class productDetail extends Component {
@@ -12,14 +13,16 @@ export default class productDetail extends Component {
       arrayImg: [],
       arrayColor: [],
       arraySize: [],
-      mainImg: ''
+      mainImg: '',
+      id: ''
     }
   }
   componentDidMount() {
     this.getDataProduct()
   }
   getDataProduct = () => {
-    axios.get('http://localhost:1000/products/2', {
+    let productId = window.location.pathname.match(/detail\/((.*)+)/)
+    axios.get('http://localhost:1000/products/' + productId[1], {
       crossDomain: true
     })
     .then(res => {
@@ -28,29 +31,40 @@ export default class productDetail extends Component {
         mainImg: res.data.urlImage[0],
         arrayImg: res.data.urlImage,
         arrayColor: res.data.color,
-        arraySize: res.data.size
-
+        arraySize: res.data.size,
+        openImage: ''
       })
-      console.log(this.state.arraySize);
-      
     })
     .catch(err => {
       console.log(err)
     })
   } 
-
-  changeImage(image) {
+  openTheImage = () => {
+    this.setState({
+      openImage: 'open'
+    })
+  }
+  changeImage = (image) => {
     this.setState({
       mainImg: image
     })
   }
-
+  closeModal = () => {
+    this.setState({
+      openImage: ''
+    })
+  }
   render() {
     return (
       <div>
+        <ModalImage
+          show={this.state.openImage}
+          theImg={this.state.mainImg}
+          closeImg={() => this.closeModal()}
+        />
         <div className="card-product">
           <div className="card-product__img">
-          <img src={this.state.mainImg} alt={this.state.altImg}/>
+          {this.state.mainImg ? (<img src={this.state.mainImg} alt={this.state.altImg} onClick={() => this.openTheImage()}/>) : ('')}
             {
               this.state.product.popularProduct ? 
               (<div className="card-product__img-label">
@@ -74,7 +88,7 @@ export default class productDetail extends Component {
               {this.state.product.price} 
               {
                 this.state.product.canUseFirst ? 
-                <span>Bisa Coba Dulu</span> : <span></span>
+                <span><img src={'https://salestock-public-prod.freetls.fastly.net/balok-assets/assets/img/icons/icon-cdbb-green-1bd5de1523af79f96b6da5f5339d22b8.png'}/>Bisa Coba Dulu</span> : <span></span>
               }
             </div>
           </div>
@@ -86,7 +100,7 @@ export default class productDetail extends Component {
             <div className="detail__colorSize-btn">
               {this.state.arrayColor.map((color, i) => {
                 return (
-                  <button>{color}</button>
+                  <button key={i}>{color}</button>
                 )
               })}
             </div>
@@ -94,7 +108,7 @@ export default class productDetail extends Component {
             <div className="detail__colorSize-btn">
               {this.state.arraySize.map((size, i) => {
                 return (
-                  <button>{size}</button>
+                  <button key={i}>{size}</button>
                 )
               })}
             </div>

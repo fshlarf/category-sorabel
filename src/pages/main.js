@@ -3,13 +3,13 @@ import Detail from './detailCategory'
 import Category from './category'
 import AddProduct from './addProduct'
 import Main from './main.scss'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 
 function RouteComponent() {
   return (
     <Router>
       <Route exact path="/" component={Category} />
-      <Route path="/product/detail" component={Detail} />
+      <Route path="/category/detail/:id" component={Detail} />
       <Route path="/add" component={AddProduct} />
     </Router>
   )
