@@ -4,7 +4,7 @@ import modalimage from './modal-image.scss'
 export default class ModalImage extends Component {
   render() {
     return (
-      <div>
+      <div className={modalimage}>
         { 
           this.props.show ?
           (<div className="modal-image modal">

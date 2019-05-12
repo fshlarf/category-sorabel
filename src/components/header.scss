@@ -1,0 +1,60 @@
+.header {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  background: linear-gradient(0deg, rgb(179, 179, 179), rgb(179, 179, 179) 49%, transparent 51%) center bottom / 100% 0.1rem no-repeat rgb(255, 255, 255);
+  z-index: 777;
+  font-family: GothamSSm-Book;
+  font-weight: normal;
+  &-container {
+    max-width: 38rem;
+    margin: 0px auto;
+    position: relative;
+    font-family: GothamSSm-Book;
+    font-weight: normal;
+    // display: flex;
+    // padding: 5px;
+    &__content {
+      position: relative;
+      background-color: white;
+      width: 100%;
+      height: 56px;
+      display: table;
+      box-sizing: border-box;  
+      padding: 5px;
+      &-back {
+        padding: 8px;
+        display: table-cell;
+        cursor: pointer;
+        vertical-align: middle;
+        img {
+          pointer-events: auto;
+          height: 38px;
+        }
+      }
+      &-title {
+        width: 100%;
+        padding-left: 10px;
+        height: 32px;
+        display: table-cell;
+        box-sizing: border-box;
+        vertical-align: middle;
+        font-size: 22px;
+        margin-left: 10px;
+      }
+      &-right {
+        padding: 8px;
+        display: flex;
+        cursor: pointer;
+        vertical-align: middle;
+        span {
+          margin-right: 18px;
+        }
+        img {
+          width: 2rem;
+        }
+      }
+    }
+  }
+}

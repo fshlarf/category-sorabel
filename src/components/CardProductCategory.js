@@ -47,7 +47,7 @@ export default class cardProducrCategory extends Component {
               (<div className="card-product__img-label">
                 <div>Produk Terlaris</div>
                 </div>) :
-              (<div></div>) 
+              ('') 
             }
           </div>
           <div className="card-product__header">
