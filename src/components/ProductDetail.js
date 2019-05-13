@@ -17,16 +17,14 @@ export default class productDetail extends Component {
       mainImg: '',
       id: ''
     }
-    this.getDataProduct = this.getDataProduct.bind(this);
   }
   componentDidMount() {
     this.getDataProduct()
   }
   getDataProduct = () => {
-    let productId = window.location.pathname.match(/detail\/((.*)+)/)
-    // console.log(this)
-    // const { id } = this.props.match.params
-    axios.get('http://localhost:1000/products/' + productId[1], {
+    // let productId = window.location.pathname.match(/detail\/((.*)+)/)
+    const { id } = this.props.match.params
+    axios.get('http://localhost:1000/products/' + id, {
       crossDomain: true
     })
     .then(res => {

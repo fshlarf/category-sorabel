@@ -16,7 +16,14 @@ export default class cardProducrCategory extends Component {
     this.getDataProduct()
   }
   getDataProduct = () => {
-    axios.get('http://localhost:1000/products', {
+    let url = ''
+    const { category } = this.props.match.params
+    if (!category) {
+      url = 'http://localhost:1000/products'
+    } else {
+      url = 'http://localhost:1000/products?category=' + encodeURIComponent(category)
+    }
+    axios.get(url, {
       crossDomain: true
     })
     .then(res => {
@@ -30,9 +37,7 @@ export default class cardProducrCategory extends Component {
     })
   }
   openDetail(product) {
-    
     let url = '/category/detail/' + product.id
-    console.log(url);
     window.location = url
   }
   render() {

@@ -1,0 +1,91 @@
+import React, { Component } from 'react'
+import axios from 'axios'
+import newProductCss from './scss/new-product.scss'
+
+export default class NewProduct extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      product: [],
+      altImg: 'Image Not Found',
+      arrayImg1: [],
+      arrayImg2: [],
+      product1: {},
+      product2: {}
+    }
+  }
+  getDataProduct = () => {
+    axios.get('http://localhost:1000/newestProduct', {
+      crossDomain: true
+    })
+    .then(res => {
+      this.setState({
+        product: res.data,
+        product1: res.data[0],
+        product2: res.data[1],
+        arrayImg1: res.data[0].urlImage,
+        arrayImg2: res.data[1].urlImage,        
+      })
+      console.log(this.state.product1)
+      
+    })
+    .catch(err => {
+      console.log(err)
+    })
+  } 
+
+  componentDidMount() {
+    this.getDataProduct()
+  }
+
+  render() {
+    return (
+      <div className="new-product">
+        <div className="new-product__header">
+          <div className="new-product__header-title">
+            <div>
+              Terbaru
+            </div>
+          </div>
+          <div className="new-product__header-link">
+            <a>LIHAT SEMUA ></a>
+          </div>      
+        </div>
+        <div className="new-product__content">
+          <div className="new-product__content-left">
+            <a className="link">
+              <img className="link-img" src={this.state.arrayImg1[0]}/>
+              <div className="link-container">
+                <div className="link-container__title">
+                  <div>
+                    {this.state.product1.title}
+                  </div>
+                  <div className="link-container__title-price">{this.state.product1.price}</div>
+                </div>
+                <div className="link-container__save">
+                  <img src="https://salestock-public-prod.freetls.fastly.net/balok-assets/assets/img/icons/icon-heart-grey-0a895ac5bdf1f98aa48d5f85efc7679d.png"/>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div className="new-product__content-right">
+            <a className="link">
+              <img className="link-img" src={this.state.arrayImg2[0]}/>
+              <div className="link-container">
+                <div className="link-container__title">
+                  <div>
+                    {this.state.product2.title}
+                  </div>
+                  <div className="link-container__title-price">{this.state.product2.price}</div>
+                </div>
+                <div className="link-container__save">
+                  <img src="https://salestock-public-prod.freetls.fastly.net/balok-assets/assets/img/icons/icon-heart-grey-0a895ac5bdf1f98aa48d5f85efc7679d.png"/>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    )
+  }
+}

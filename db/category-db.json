@@ -29,8 +29,8 @@
       "popularProduct": true
     },
     {
-      "category": "dress",
-      "title": "Loinaya Stripe A Line Mini Dress",
+      "category": "midi dress",
+      "title": "Loinaya Stripe A Line Midi Dress",
       "id": 2,
       "urlImage": [
         "https://imager-next.freetls.fastly.net/images/resized/480/f64e4187-0e07-4c67-b6bb-5df6d828be7c",
@@ -66,8 +66,8 @@
       ]
     },
     {
-      "title": "Mokzilla Stripe V-Neck Mini Dress",
-      "category": "Dress",
+      "title": "Mokzilla Stripe V-Neck Maxi Dress",
+      "category": "maxi dress",
       "price": "139000",
       "material": "Katun",
       "likes": "5466",
@@ -94,6 +94,179 @@
       "canUseFirst": false,
       "popularProduct": true,
       "id": 3
+    },
+    {
+      "category": "midi dress",
+      "title": "Dulitya Stripes Bodycon Midi Dress",
+      "id": 4,
+      "urlImage": [
+        "https://imager-next.freetls.fastly.net/images/resized/480/15f5793a-bb0d-41f0-b57e-624309695fa0",
+        "https://imager-next.freetls.fastly.net/images/resized/480/9397a1f9-6212-4df0-8e9e-831d84ff4397"
+      ],
+      "price": 159000,
+      "canUseFirst": true,
+      "material": "cotton",
+      "color": [
+        "NAVY",
+        "BLACK"
+      ],
+      "size": [
+        "L",
+        "S",
+        "XL"
+      ],
+      "likes": 0,
+      "detail": [
+        "Bahan Katun Stretch",
+        "Resleting Belakang"
+      ],
+      "sizeChart": "Warna Hitam dan Navy, Ukuran tersedia S",
+      "popularProduct": true
+    },
+    {
+      "category": "maxi dress",
+      "title": "Dulitya Stripes Bodycon Maxi Dress",
+      "id": 5,
+      "urlImage": [
+        "https://imager-next.freetls.fastly.net/images/resized/480/15f5793a-bb0d-41f0-b57e-624309695fa0",
+        "https://imager-next.freetls.fastly.net/images/resized/480/9397a1f9-6212-4df0-8e9e-831d84ff4397"
+      ],
+      "price": 159000,
+      "canUseFirst": true,
+      "material": "cotton",
+      "color": [
+        "NAVY",
+        "BLACK"
+      ],
+      "size": [
+        "L",
+        "S",
+        "XL"
+      ],
+      "likes": 0,
+      "detail": [
+        "Bahan Katun Stretch",
+        "Resleting Belakang"
+      ],
+      "sizeChart": "Warna Hitam dan Navy, Ukuran tersedia S",
+      "popularProduct": true
+    },
+    {
+      "category": "mini dress",
+      "title": "Kamil Tartan Simple Mini Dress",
+      "id": 6,
+      "urlImage": [
+        "https://imager-next.freetls.fastly.net/images/resized/480/ffa57c1e-2a23-4624-bd5b-94c9ba163253"
+      ],
+      "price": 159000,
+      "canUseFirst": true,
+      "material": "cotton",
+      "color": [
+        "NAVY",
+        "BLACK"
+      ],
+      "size": [
+        "L",
+        "S",
+        "XL"
+      ],
+      "likes": 0,
+      "detail": [
+        "Bahan Katun Stretch",
+        "Resleting Belakang"
+      ],
+      "sizeChart": "Warna Hitam dan Navy, Ukuran tersedia S",
+      "popularProduct": true
+    },
+    {
+      "category": "mini dress",
+      "title": "Dulitya Stripes Bodycon Mini Dress New",
+      "id": 7,
+      "urlImage": [
+        "https://imager-next.freetls.fastly.net/images/resized/480/1cae6830-bc79-4a64-afd6-5fc48a6d2822",
+        "https://imager-next.freetls.fastly.net/images/resized/480/9397a1f9-6212-4df0-8e9e-831d84ff4397"
+      ],
+      "price": 159000,
+      "canUseFirst": true,
+      "material": "cotton",
+      "color": [
+        "NAVY",
+        "BLACK"
+      ],
+      "size": [
+        "L",
+        "S",
+        "XL"
+      ],
+      "likes": 0,
+      "detail": [
+        "Bahan Katun Stretch",
+        "Resleting Belakang"
+      ],
+      "sizeChart": "Warna Hitam dan Navy, Ukuran tersedia S",
+      "popularProduct": true
+    }
+  ],
+  "newestProduct": [
+    {
+      "category": "mini dress",
+      "title": "Krasnia Feather Cold Shoulder Mini Dress",
+      "id": 1,
+      "urlImage": [
+        "https://imager-next.freetls.fastly.net/images/resized/480/1cae6830-bc79-4a64-afd6-5fc48a6d2822"
+      ],
+      "price": 159000,
+      "canUseFirst": true,
+      "material": "Satin",
+      "color": [
+        "NAVY",
+        "BLACK",
+        "MAROON",
+        "BROKEN WHITE"
+      ],
+      "size": [
+        "M",
+        "L",
+        "S",
+        "XL"
+      ],
+      "likes": 55,
+      "detail": [
+        "Resleting Belakang"
+      ],
+      "sizeChart": "Warna Hitam dan Navy, Ukuran tersedia S",
+      "popularProduct": false
+    },
+    {
+      "category": "maxi dress",
+      "title": "HALA Jodeci Plain Ribbon Muslim Dress",
+      "id": 2,
+      "urlImage": [
+        "https://imager-next.freetls.fastly.net/images/resized/480/e7aa22a0-c7dc-4da4-8589-053ea5d00c93",
+        "https://imager-next.freetls.fastly.net/images/resized/480/7bad8012-5b25-411b-a580-e953dd28d96a",
+        "https://imager-next.freetls.fastly.net/images/resized/480/c6876e59-fbed-403a-8bcc-da08e8de84fc",
+        "https://imager-next.freetls.fastly.net/images/resized/480/5772b5d6-5443-45d9-ae40-39c4ee7730e9"
+      ],
+      "price": 269000,
+      "canUseFirst": true,
+      "material": "Polyster",
+      "color": [
+        "DARK GREEN",
+        "MUSTARD",
+        "DUSTY PINK"
+      ],
+      "size": [
+        "M",
+        "L",
+        "S",
+        "XL"
+      ],
+      "likes": 298,
+      "detail": [
+        "Resleting Belakang, Tali Pinggang Hidup"
+      ],
+      "sizeChart": "Warna : Dark Green, Dusty Pink dan Mustard (kiri ke kanan)",
+      "popularProduct": false
     }
   ]
 }
