@@ -21,7 +21,7 @@ npm run json-server
 # build for production and launch server
 $ npm run build
 
-#NOTE: YOU MUST RUN THE BACKEND FOR BETTER EXPERIENCE! 
+# NOTE: YOU MUST RUN THE BACKEND FOR BETTER EXPERIENCE! 
 
 ```
 
@@ -30,6 +30,6 @@ $ npm run build
 ``` bash
 React.js, Webpack, Bootstrap, axios, SASS and JSON Server (Server Side)
 
-#If you have some problems when you run this project in your local device, please contact me at faishal1303@gmail.com. Enjoy.
+# If you have some problems when you run this project in your local device, please contact me at faishal1303@gmail.com. Enjoy.
 
 ```
