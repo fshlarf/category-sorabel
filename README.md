@@ -6,10 +6,10 @@ This project created by Faishal Arif (faishal1303@gmail.com) by using React.js  
 # Clone the project
 git clone https://github.com/fshlarf/sorabel-category.git
 
-# install dependencies In the project directory
+# install dependencies in the project directory
 npm install # Or yarn install
 
-# Run this project in Local In the project directory
+# Run this project in Local in the project directory
 # serve with hot reload at localhost:3000
 npm start
 
@@ -20,11 +20,15 @@ npm run json-server
 # build for production and launch server
 $ npm run build
 
+#NOTE: YOU MUST RUN THE BACKEND FOR BETTER EXPERIENCE! 
+
 ```
 
 ## This Project Built with
 
 ``` bash
 React.js, Bootstrap, axios, sass and Json Server for server side
+
+#If you have some problems when you run this project in your local device, please contact me at faishal1303@gmail.com. Enjoy.
 
 ```
