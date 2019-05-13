@@ -23,9 +23,15 @@ export default class productDetail extends Component {
     this.getDataProduct()
   }
   getDataProduct = () => {
-    // let productId = window.location.pathname.match(/detail\/((.*)+)/)
     const { id } = this.props.match.params
-    axios.get('http://localhost:1000/products/' + id, {
+    const { path } = this.props.match
+    let url = 'http://localhost:1000/products/'
+    if (path === "/category/detail/:id") {
+      url = 'http://localhost:1000/products/'
+    } else if (path === "/new/detail/:id") {
+      url = 'http://localhost:1000/newestProducts/'
+    }
+    axios.get(url + id, {
       crossDomain: true
     })
     .then(res => {

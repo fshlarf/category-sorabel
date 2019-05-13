@@ -18,7 +18,7 @@ export default class NewProduct extends Component {
     }
   }
   getDataProduct = () => {
-    axios.get('http://localhost:1000/newestProduct', {
+    axios.get('http://localhost:1000/newestProducts', {
       crossDomain: true
     })
     .then(res => {
@@ -29,10 +29,8 @@ export default class NewProduct extends Component {
         arrayImg1: res.data[0].urlImage,
         arrayImg2: res.data[1].urlImage,    
         price1: res.data[0].price,
-        price2: res.data[1].price
+        price2: res.data[1].price,
       })
-      console.log(this.state.product1)
-      
     })
     .catch(err => {
       console.log(err)
@@ -41,6 +39,15 @@ export default class NewProduct extends Component {
 
   componentDidMount() {
     this.getDataProduct()
+  }
+
+  openProduct1 = () => {
+    let url = '/new/detail/' + this.state.product1.id
+    window.location = url
+  }
+  openProduct2 = () => {
+    let url = '/new/detail/' + this.state.product2.id
+    window.location = url
   }
   
   render() {
@@ -59,10 +66,10 @@ export default class NewProduct extends Component {
         <div className="new-product__content">
           <div className="new-product__content-left">
             <a className="link">
-              <img className="link-img" src={this.state.arrayImg1[0]}/>
+              <img className="link-img" src={this.state.arrayImg1[0]} onClick={this.openProduct1}/>
               <div className="link-container">
                 <div className="link-container__title">
-                  <div>
+                  <div onClick={this.openProduct1}>
                     {this.state.product1.title}
                   </div>
                   <div className="link-container__title-price">{formatMoney(this.state.price1)}</div>
@@ -75,10 +82,10 @@ export default class NewProduct extends Component {
           </div>
           <div className="new-product__content-right">
             <a className="link">
-              <img className="link-img" src={this.state.arrayImg2[0]}/>
+              <img className="link-img" src={this.state.arrayImg2[0]} onClick={this.openProduct2}/>
               <div className="link-container">
                 <div className="link-container__title">
-                  <div>
+                  <div onClick={this.openProduct2}>
                     {this.state.product2.title}
                   </div>
                   <div className="link-container__title-price">{formatMoney(this.state.price2)}</div>

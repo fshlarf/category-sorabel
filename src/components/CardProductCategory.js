@@ -57,7 +57,13 @@ export default class cardProducrCategory extends Component {
           </div>
           <div className="card-product__header">
             <div className="card-product__header-title" onClick={() => this.openDetail(product)}>{product.title}</div>
-            <label className="card-product__header-label">L, XL, M</label>
+            <label className="card-product__header-label">
+              {
+                product.size.map((size, i) => {
+                  return ( size + '  ' )
+                })
+              }
+            </label>
             <span>
               <img className="ic-like" src={'https://salestock-public-prod.freetls.fastly.net/balok-assets/assets/img/icons/icon-heart-grey-0a895ac5bdf1f98aa48d5f85efc7679d.png'} alt={this.state.altImg}/>
               <button className="btn btn-primary" >BELI</button>
