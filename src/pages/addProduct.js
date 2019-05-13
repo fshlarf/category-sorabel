@@ -116,11 +116,11 @@ export default class addProduct extends Component {
             <div className="form-group">
               <label>Nama Product</label>
               <input type="text" className="form-control" name="name" placeholder="Contoh Dress Cantik" onChange={this.handleChangeTitle}/>
-              <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div className="form-group">
               <label >Kategori</label>
-              <input type="text" className="form-control" placeholder="Contoh Dress" onChange={this.handleChangeCategory}/>
+              <input type="text" className="form-control" placeholder="Contoh: mini dress" onChange={this.handleChangeCategory}/>
+              <small id="emailHelp" className="form-text text-muted">Pilihan kategori (mini dress, midi dress, maxi dress)</small>
             </div>
             <div className="form-group">
               <label>Price</label>

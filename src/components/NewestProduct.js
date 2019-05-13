@@ -42,7 +42,7 @@ export default class NewProduct extends Component {
   componentDidMount() {
     this.getDataProduct()
   }
-
+  
   render() {
     return (
       <div className="new-product">
