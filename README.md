@@ -21,6 +21,7 @@ npm run json-server
 # build for production and launch server
 $ npm run build
 
+# CMS will serve at localhost:3000/add. You can add your data product here
 # NOTE: YOU MUST RUN THE BACKEND FOR BETTER EXPERIENCE! 
 
 ```
