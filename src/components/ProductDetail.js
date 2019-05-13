@@ -13,6 +13,7 @@ export default class productDetail extends Component {
       arrayImg: [],
       arrayColor: [],
       arraySize: [],
+      arrayDetail: [],
       mainImg: '',
       id: ''
     }
@@ -32,6 +33,7 @@ export default class productDetail extends Component {
         arrayImg: res.data.urlImage,
         arrayColor: res.data.color,
         arraySize: res.data.size,
+        arrayDetail: res.data.detail,
         openImage: ''
       })
     })
@@ -122,7 +124,11 @@ export default class productDetail extends Component {
           </div>
           <div className="detail__more">
             Detail
-            <div>{this.state.product.detail}</div>
+            {this.state.arrayDetail.map((detail, i) => {
+              return (
+                <div key={i}>{detail}</div>
+              )
+            })}
           </div>
         </div>
       </div>

@@ -12,10 +12,13 @@
       "canUseFirst": true,
       "material": "cotton",
       "color": [
-        "NAVY", "BLACK"
+        "NAVY",
+        "BLACK"
       ],
       "size": [
-        "L", "S", "XL"
+        "L",
+        "S",
+        "XL"
       ],
       "likes": 0,
       "detail": [
@@ -39,10 +42,13 @@
       "fiturCanUse": true,
       "material": "Twistcone kombinasi katun",
       "color": [
-        "NAVY", "BLACK", "MAROON"
+        "NAVY",
+        "BLACK",
+        "MAROON"
       ],
       "size": [
-        "L", "XL"
+        "L",
+        "XL"
       ],
       "likes": 4000,
       "detail": [
@@ -58,6 +64,36 @@
           "comment": "Barang bagus"
         }
       ]
+    },
+    {
+      "title": "Mokzilla Stripe V-Neck Mini Dress",
+      "category": "Dress",
+      "price": "139000",
+      "material": "Katun",
+      "likes": "5466",
+      "sizeChart": "Warna : Black dan Navy  Size S Lingkar dada 90 cm Lebar bahu 36 cm Panjang lengan 45 cm Lingkar lengan 45 cm Panjang 90 cm  Size M Lingkar dada 94 cm Lebar bahu 37 cm Panjang lengan 45 cm Lingkar lengan 47 cm Panjang 90 cm  Size L Lingkar dada 100 cm Lebar bahu 39 cm Panjang lengan 46 cm Lingkar lengan 49 cm Panjang 92 cm  Size XL Lingkar dada 110 cm Lebar bahu 41 cm Panjang lengan 47 cm Lingkar lengan 53 cm Panjang 95 cm  **Ukuran Sorabel  Model Menggunakan Size M**",
+      "urlImage": [
+        "https://imager-next.freetls.fastly.net/images/resized/480/d30dd206-70ab-4814-aa0c-68c1711ce749",
+        "https://imager-next.freetls.fastly.net/images/resized/480/82f3272e-72b4-4545-b7d3-af383afdf07d",
+        "https://imager-next.freetls.fastly.net/images/resized/480/5c210377-4bf6-449d-b1f6-0579c50e812d",
+        "https://imager-next.freetls.fastly.net/images/resized/480/0fd8ca07-cf18-4b75-be22-7e708b67ff1f"
+      ],
+      "detail": [
+        "Katun Stretch"
+      ],
+      "color": [
+        "Navy",
+        "Maroon"
+      ],
+      "size": [
+        "M",
+        "L",
+        "XL",
+        "S"
+      ],
+      "canUseFirst": false,
+      "popularProduct": true,
+      "id": 3
     }
   ]
 }
