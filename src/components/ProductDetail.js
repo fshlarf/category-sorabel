@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import detailProd from './scss/product-detail.scss'
 import ModalImage from './ModalImage'
-// import API from './../config/Http'
+import { formatMoney } from './../common/currency'
 
 export default class productDetail extends Component {
   constructor(props) {
@@ -15,7 +15,8 @@ export default class productDetail extends Component {
       arraySize: [],
       arrayDetail: [],
       mainImg: '',
-      id: ''
+      id: '',
+      price: ''
     }
   }
   componentDidMount() {
@@ -35,7 +36,8 @@ export default class productDetail extends Component {
         arrayColor: res.data.color,
         arraySize: res.data.size,
         arrayDetail: res.data.detail,
-        openImage: ''
+        openImage: '',
+        price: res.data.price
       })
     })
     .catch(err => {
@@ -88,7 +90,7 @@ export default class productDetail extends Component {
           <div className="detail__title">
             <div className="detail__title-name">{this.state.product.title}</div>
             <div className="detail__title-price">
-              {this.state.product.price} 
+              {formatMoney(this.state.price)} 
               {
                 this.state.product.canUseFirst ? 
                 <span><img src={'https://salestock-public-prod.freetls.fastly.net/balok-assets/assets/img/icons/icon-cdbb-green-1bd5de1523af79f96b6da5f5339d22b8.png'}/>Bisa Coba Dulu</span> : <span></span>

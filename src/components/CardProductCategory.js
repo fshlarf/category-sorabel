@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import { formatMoney } from './../common/currency'
 // import API from './../config/Http'
 import cardProduct from './scss/card-product.scss'
 import { Redirect } from "react-router-dom"
@@ -62,7 +63,7 @@ export default class cardProducrCategory extends Component {
               <img className="ic-like" src={'https://salestock-public-prod.freetls.fastly.net/balok-assets/assets/img/icons/icon-heart-grey-0a895ac5bdf1f98aa48d5f85efc7679d.png'} alt={this.state.altImg}/>
               <button className="btn btn-primary" >BELI</button>
             </span>
-            <div className="card-product__header-price">{product.price}</div>
+            <div className="card-product__header-price">{formatMoney(product.price)}</div>
           </div>
          </div>
        ))}

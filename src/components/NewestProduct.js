@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import { formatMoney } from './../common/currency'
 import newProductCss from './scss/new-product.scss'
 
 export default class NewProduct extends Component {
@@ -11,7 +12,9 @@ export default class NewProduct extends Component {
       arrayImg1: [],
       arrayImg2: [],
       product1: {},
-      product2: {}
+      product2: {},
+      price1: '',
+      price2: ''
     }
   }
   getDataProduct = () => {
@@ -24,7 +27,9 @@ export default class NewProduct extends Component {
         product1: res.data[0],
         product2: res.data[1],
         arrayImg1: res.data[0].urlImage,
-        arrayImg2: res.data[1].urlImage,        
+        arrayImg2: res.data[1].urlImage,    
+        price1: res.data[0].price,
+        price2: res.data[1].price
       })
       console.log(this.state.product1)
       
@@ -60,7 +65,7 @@ export default class NewProduct extends Component {
                   <div>
                     {this.state.product1.title}
                   </div>
-                  <div className="link-container__title-price">{this.state.product1.price}</div>
+                  <div className="link-container__title-price">{formatMoney(this.state.price1)}</div>
                 </div>
                 <div className="link-container__save">
                   <img src="https://salestock-public-prod.freetls.fastly.net/balok-assets/assets/img/icons/icon-heart-grey-0a895ac5bdf1f98aa48d5f85efc7679d.png"/>
@@ -76,7 +81,7 @@ export default class NewProduct extends Component {
                   <div>
                     {this.state.product2.title}
                   </div>
-                  <div className="link-container__title-price">{this.state.product2.price}</div>
+                  <div className="link-container__title-price">{formatMoney(this.state.price2)}</div>
                 </div>
                 <div className="link-container__save">
                   <img src="https://salestock-public-prod.freetls.fastly.net/balok-assets/assets/img/icons/icon-heart-grey-0a895ac5bdf1f98aa48d5f85efc7679d.png"/>
