@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 // import API from './../config/Http'
-import cardProduct from './card-product.scss'
+import cardProduct from './scss/card-product.scss'
 import { Redirect } from "react-router-dom"
 
 export default class cardProducrCategory extends Component {

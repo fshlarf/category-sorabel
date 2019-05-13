@@ -8,7 +8,8 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 function RouteComponent() {
   return (
     <Router>
-      <Route exact path="/" component={Category} />
+      {/* <Route exact="/category" component={Index} /> */}
+      <Route exact path="/category" component={Category} />
       <Route path="/category/detail/:id" component={Detail} />
       <Route path="/add" component={AddProduct} />
     </Router>

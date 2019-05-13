@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import detailProd from './product-detail.scss'
+import detailProd from './scss/product-detail.scss'
 import ModalImage from './ModalImage'
 // import API from './../config/Http'
 
@@ -17,12 +17,15 @@ export default class productDetail extends Component {
       mainImg: '',
       id: ''
     }
+    this.getDataProduct = this.getDataProduct.bind(this);
   }
   componentDidMount() {
     this.getDataProduct()
   }
   getDataProduct = () => {
     let productId = window.location.pathname.match(/detail\/((.*)+)/)
+    // console.log(this)
+    // const { id } = this.props.match.params
     axios.get('http://localhost:1000/products/' + productId[1], {
       crossDomain: true
     })

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import HeaderScss from './header.scss'
+import HeaderScss from './scss/header.scss'
 
 export default class Header extends Component {
   toPrevious = () => {

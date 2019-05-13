@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import modalimage from './modal-image.scss'
+import modalimage from './scss/modal-image.scss'
 
 export default class ModalImage extends Component {
   render() {
