@@ -61,6 +61,7 @@ export default class ListAllProducts extends Component {
           shosModal={this.state.isShow}
           closeModal={this.closeModal}
           executeDelete={this.exeDelete}
+          dontExecute={this.closeModal}
         />
         <div className="rootadd list-product">
           <h4>Daftar Produk</h4>

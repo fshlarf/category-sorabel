@@ -12,7 +12,7 @@ export default class Modal extends Component {
                 <span className="close" onClick={this.props.closeModal}>&times;</span>
                 <p>Apakah kamu ingin menghapus produk ini?</p>
                 <div className="modal-content__btn">
-                  <button className="btn btn-secondary">Tidak</button>
+                  <button className="btn btn-secondary" onClick={this.props.dontExecute}>Tidak</button>
                   <button className="btn btn-primary" onClick={this.props.executeDelete}>Ya</button>
                 </div>
               </div>
