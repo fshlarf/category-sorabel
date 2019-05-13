@@ -4,6 +4,7 @@ import Category from './category'
 import AddProduct from './addProduct'
 import Index from './index'
 import NewProductDetail from './newPorductDetail'
+import ListAllProduct from './listAllProduct'
 import Main from './main.scss'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 
@@ -15,6 +16,7 @@ function RouteComponent() {
       <Route path="/category/detail/:id" component={Detail} />
       <Route path="/new/detail/:id" component={NewProductDetail} />
       <Route path="/add" component={AddProduct} />
+      <Route path="/list" component={ListAllProduct} />
     </Router>
   )
 }
